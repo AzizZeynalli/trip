@@ -1,0 +1,74 @@
+.topHeader {
+    background-color: #F5F7FA;
+    padding: 10px 70px;
+    height: 48px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.topHeader nav {
+    width: 30%;
+}
+
+.topHeader button {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    align-items: center;
+    gap: 6px;
+}
+
+.topHeader nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 34px;
+}
+
+.bottomHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+.bottomHeader div:nth-of-type(1) {
+    display: flex;
+    gap: 25px;
+}
+
+.bottomHeader div:nth-of-type(2) {
+    display: flex;
+    gap: 15px;
+}
+
+.bottomHeader button {
+    font-weight: bold;
+}
+
+.bottomHeader .rightButtons button {
+    border-radius: 24px;
+    height: 45px;
+    padding: 12px 24px;
+    font-size: 16px;
+
+}
+
+.bottomHeader .leftButtons button {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+
+.bottomHeader .rightButtons button:nth-of-type(1){
+    background-color: #4A21EF;
+    color: #FFFFFF;
+    border: none;
+}
+
+.bottomHeader .rightButtons button:nth-of-type(2){
+    background-color: #FFFFFF;
+    color: #4A21EF;
+    border: 1px solid #4A21EF;
+}
