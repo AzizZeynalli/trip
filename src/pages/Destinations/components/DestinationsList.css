@@ -1,0 +1,30 @@
+.destionations-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 100px 180px;
+}
+
+.destionations-list div {
+    width: 100%;
+    border-right: 1px solid #E3E7EB;
+}
+
+.destionations-list div:last-child {
+    border-right: none;
+}
+
+.destionations-list div h2 {
+    color: #4A21EF;
+}
+
+.destionations-list div ul {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    font-weight: 500;
+}

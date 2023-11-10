@@ -1,0 +1,23 @@
+.localexperts-section h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.localexperts-section {
+    padding: 0;
+}
+
+.localexperts-section .container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.second-image {
+    padding-top: 50px;
+    position: relative;
+    right: 80px;
+}
