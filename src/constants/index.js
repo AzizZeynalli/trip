@@ -9,17 +9,26 @@ import new3 from "../assets/new/new3.png";
 import icon1 from "../assets/why-us/icon1.svg";
 import icon2 from "../assets/why-us/icon2.svg";
 import icon3 from "../assets/why-us/icon3.svg";
-import destionationsCard1 from "../assets/destinations/destinationsCard1.png"
-import destionationsCard2 from "../assets/destinations/destinationsCard2.png"
-import destionationsCard3 from "../assets/destinations/destinationsCard3.png"
-import destionationsCard4 from "../assets/destinations/destinationsCard4.png"
-import destionationsCard5 from "../assets/destinations/destinationsCard5.png"
-import destionationsCard6 from "../assets/destinations/destinationsCard6.png"
+import destionationsCard1 from "../assets/destinations/destinationsCard1.png";
+import destionationsCard2 from "../assets/destinations/destinationsCard2.png";
+import destionationsCard3 from "../assets/destinations/destinationsCard3.png";
+import destionationsCard4 from "../assets/destinations/destinationsCard4.png";
+import destionationsCard5 from "../assets/destinations/destinationsCard5.png";
+import destionationsCard6 from "../assets/destinations/destinationsCard6.png";
 import articlePhoto1 from "../assets/blog/articlePhoto1.png";
 import articlePhoto2 from "../assets/blog/articlePhoto2.png";
 import articlePhoto3 from "../assets/blog/articlePhoto3.png";
 import articlePhoto4 from "../assets/blog/articlePhoto4.png";
 import articlePhoto5 from "../assets/blog/articlePhoto5.png";
+import mustSee1 from "../assets/italy/mustSee1.png";
+import mustSee2 from "../assets/italy/mustSee2.png";
+import mustSee3 from "../assets/italy/mustSee3.png";
+import guideIcon1 from "../assets/italy/guideIcon1.svg";
+import guideIcon2 from "../assets/italy/guideIcon2.svg";
+import guideIcon3 from "../assets/italy/guideIcon3.svg";
+import guideIcon4 from "../assets/italy/guideIcon4.svg";
+import guideIcon5 from "../assets/italy/guideIcon5.svg";
+import guideIcon6 from "../assets/italy/guideIcon6.svg";
 
 export const trendingItems = [
   {
@@ -263,7 +272,7 @@ export const topDestinations = [
     country: "Italy",
     title: "International Italy",
     tripPlans: 12,
-    price: 199.00,
+    price: 199.0,
     photo: destionationsCard1,
   },
   {
@@ -271,7 +280,7 @@ export const topDestinations = [
     country: "Portugal",
     title: "International Portugal",
     tripPlans: 54,
-    price: 250.00,
+    price: 250.0,
     photo: destionationsCard2,
   },
   {
@@ -279,7 +288,7 @@ export const topDestinations = [
     country: "Turkiye",
     title: "International Turkiye",
     tripPlans: 19,
-    price: 400.00,
+    price: 400.0,
     photo: destionationsCard3,
   },
   {
@@ -287,7 +296,7 @@ export const topDestinations = [
     country: "Iceland",
     title: "International Iceland",
     tripPlans: 105,
-    price: 299.00,
+    price: 299.0,
     photo: destionationsCard4,
   },
   {
@@ -295,7 +304,7 @@ export const topDestinations = [
     country: "Costa Rica",
     title: "International Costa Rica",
     tripPlans: 23,
-    price: 250.00,
+    price: 250.0,
     photo: destionationsCard5,
   },
   {
@@ -303,10 +312,10 @@ export const topDestinations = [
     country: "Argentina",
     title: "International Argentina",
     tripPlans: 87,
-    price: 400.00,
+    price: 400.0,
     photo: destionationsCard6,
   },
-]
+];
 
 export const blogArticles = [
   {
@@ -339,4 +348,64 @@ export const blogArticles = [
     info: "In the city of outstanding churches, none can hold a candle to St Peter's, Italy’s largest, richest and most spectacular basilica. Built atop a 4th…",
     photo: articlePhoto5,
   },
-]
+];
+
+export const italyMustSeeItems = [
+  {
+    id: 1,
+    title: "Vatican museums",
+    info: "Founded by Pope Julius II in the early 16th century and enlarged by successive pontiffs, the Vatican Museums boast one of the world's greatest art…",
+    photo: mustSee1,
+  },
+  {
+    id: 2,
+    title: "Colosseum",
+    info: "Everyone wants to see the Colosseum, and it doesn’t disappoint, especially if accompanied by tales of armored gladiators and hungry lions. More...",
+    photo: mustSee2,
+  },
+  {
+    id: 3,
+    title: "St Peter's Basilica",
+    info: "In the city of outstanding churches, none can hold a candle to St Peter's, Italy’s largest, richest and most spectacular basilica. Built atop a 4th…",
+    photo: mustSee3,
+  },
+];
+
+export const italyGuide = [
+  {
+    id: 1,
+    title: "Best Things to Do",
+    info: "Italy has so many delights to offer its visitors, it's hard to know where to start. Here's our pick of the best experiences Italy has to offer you.",
+    icon: guideIcon1,
+  },
+  {
+    id: 2,
+    title: "Things to Know",
+    info: "With so many attractions, it's hard to know where to begin with a trip to Italy. Here's some local insight into the essential things to know before you go.",
+    icon: guideIcon2,
+  },
+  {
+    id: 3,
+    title: "Transportation",
+    info: "Your guide to traveling independently across Italy, from the Alps to the islands.",
+    icon: guideIcon3,
+  },
+  {
+    id: 4,
+    title: "Visa Requirements",
+    info: "Italy is one of the most visited countries in Europe and its many attractions are hard to resist. Find out if you need a visa before you go.",
+    icon: guideIcon4,
+  },
+  {
+    id: 5,
+    title: "Money and Costs",
+    info: "These top budget tips can help you save money while exploring Italy.",
+    icon: guideIcon5,
+  },
+  {
+    id: 6,
+    title: "Traveling with Kids",
+    info: "Experience the best of Italy as a family with this guide to the top things to do there with kids.",
+    icon: guideIcon6,
+  },
+];

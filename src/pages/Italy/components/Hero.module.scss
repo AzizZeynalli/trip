@@ -3,22 +3,23 @@
     background-size: cover;
     background-position: center;
     width: 94%;
-    height: 54vh;
+    height: 80vh;
     margin: 10px auto 0 auto;
     border-radius: 20px;
     background-repeat: no-repeat;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 200px;
     h1 {
         font-size: 48px;
         color: #fff;
         font-weight: 600;
     }
     p {
+        margin-top: 16px;
         text-align: center;
         color: #fff;
         font-weight: 600;
-        margin-top: 14px;
+        margin: 0;
     }
     button {
         background-color: #4A21EF;
@@ -26,5 +27,6 @@
         padding: 12px 24px;
         border-radius: 100px;
         border: none;
+        margin-top: 24px;
     }
 }
