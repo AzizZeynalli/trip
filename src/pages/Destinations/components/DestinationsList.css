@@ -28,3 +28,7 @@
     list-style-type: none;
     font-weight: 500;
 }
+
+.destionations-list div ul li a {
+    color: #141D24;
+}

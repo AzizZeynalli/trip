@@ -4,14 +4,15 @@ import GoogleLogo from "../../assets/GoogleLogo.svg";
 import AppleLogo from "../../assets/AppleLogo.svg";
 import eye from "../../assets/eye.svg";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   return (
     <div className="container">
       <aside></aside>
       <main>
-        <div className="appLogoContainer">
-          <img src={logo} alt="" />
+        <div className="appLogoContainer" style={{marginBottom: "120px"}}>
+          <img src={logo} alt="" /> 
         </div>
         <h1>Sign in for your exciting journey</h1>
         <form>
@@ -27,7 +28,9 @@ const SignIn = () => {
             <img src={eye} alt="" width={"20"} />
           </div>
         </form>
-        <p>Forgot password?</p>
+        <p>
+          <Link to="/forgotpassword">Forgot password?</Link>
+        </p>
         <button className="signinButton">Sign in</button>
         <p>or use one of this</p>
         <div className="logosContainer">
@@ -42,7 +45,9 @@ const SignIn = () => {
           </button>
         </div>
         <p>
-          Don't have an account? <span>Create new for adventure!</span>
+          <Link to="/createaccount">
+            Don't have an account? <span>Create new for adventure!</span>
+          </Link>
         </p>
       </main>
     </div>

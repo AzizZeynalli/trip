@@ -29,8 +29,9 @@ main {
 }
 
 main .appLogoContainer {
-    margin-bottom: 90px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -54,7 +55,7 @@ main form, .signinButton{
     font-size: 16px;
 }
 
-main form input, .signinButton {
+main form input, .signinButton, .resetButton {
     height: 48px;
     width: 100%;
 }
@@ -66,11 +67,17 @@ main form input {
     margin-top: 6px;
 }
 
-.signinButton {
+.signinButton, .resetButton {
     border-radius: 24px;
     border: 1px solid #E3E7EB;
     background-color: #4A21EF;
     color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.resetButton {
+    margin-top: 24px;
 }
 
 main p {
@@ -88,10 +95,22 @@ p:nth-of-type(1) {
     margin-bottom: 30px;
 }
 
-p:nth-of-type(2){
+p:nth-of-type(2), p.signUpWith{
     margin-top: 50px;
     margin-bottom: 30px;
     color: #97A5B2;
+}
+
+p.signUpWith {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #141D24;
 }
 
 p {
@@ -101,6 +120,45 @@ p {
 
 p:nth-of-type(3) span {
     color: #4A21EF;
+}
+
+p.enteringEmail {
+    font-weight: 400;
+    color: #5E6F7D;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    padding: 16px 0 24px 0;
+}
+
+div.top {
+    display: flex;
+    justify-content: start;
+    gap: 160px;
+    align-items: center;
+    margin-bottom: 80px;
+    height: 100px;
+    position: relative;
+    right: 40px;
+}
+
+.createAccountHeading {
+    margin-bottom: 40px;
+}
+
+p.createAccountFooter {
+    text-align: center;
+    color: #141D24;
+    font-weight: 400;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+p.createAccountFooter a {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 680px) {

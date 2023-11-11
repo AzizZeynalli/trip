@@ -9,6 +9,17 @@ import new3 from "../assets/new/new3.png";
 import icon1 from "../assets/why-us/icon1.svg";
 import icon2 from "../assets/why-us/icon2.svg";
 import icon3 from "../assets/why-us/icon3.svg";
+import destionationsCard1 from "../assets/destinations/destinationsCard1.png"
+import destionationsCard2 from "../assets/destinations/destinationsCard2.png"
+import destionationsCard3 from "../assets/destinations/destinationsCard3.png"
+import destionationsCard4 from "../assets/destinations/destinationsCard4.png"
+import destionationsCard5 from "../assets/destinations/destinationsCard5.png"
+import destionationsCard6 from "../assets/destinations/destinationsCard6.png"
+import articlePhoto1 from "../assets/blog/articlePhoto1.png";
+import articlePhoto2 from "../assets/blog/articlePhoto2.png";
+import articlePhoto3 from "../assets/blog/articlePhoto3.png";
+import articlePhoto4 from "../assets/blog/articlePhoto4.png";
+import articlePhoto5 from "../assets/blog/articlePhoto5.png";
 
 export const trendingItems = [
   {
@@ -245,3 +256,87 @@ export const faqList = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Orci sagittis eu volutpat odio facilisis mauris sit amet. Morbi tempus iaculis urna id volutpat lacus laoreet non. Odio pellentesque diam volutpat commodo sed egestas. Pellentesque dignissim enim sit amet. Elit sed vulputate mi sit amet. Sollicitudin ac orci phasellus egestas tellus. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Eget nullam non nisi est sit amet facilisis. Enim facilisis gravida neque convallis a cras semper auctor neque. Amet risus nullam eget felis. Eget aliquet nibh praesent tristique magna sit amet. Massa vitae tortor condimentum lacinia quis vel eros donec. Porttitor rhoncus dolor purus non enim praesent. Praesent tristique magna sit amet purus gravida quis. Enim facilisis gravida neque convallis.",
   },
 ];
+
+export const topDestinations = [
+  {
+    id: 1,
+    country: "Italy",
+    title: "International Italy",
+    tripPlans: 12,
+    price: 199.00,
+    photo: destionationsCard1,
+  },
+  {
+    id: 2,
+    country: "Portugal",
+    title: "International Portugal",
+    tripPlans: 54,
+    price: 250.00,
+    photo: destionationsCard2,
+  },
+  {
+    id: 3,
+    country: "Turkiye",
+    title: "International Turkiye",
+    tripPlans: 19,
+    price: 400.00,
+    photo: destionationsCard3,
+  },
+  {
+    id: 4,
+    country: "Iceland",
+    title: "International Iceland",
+    tripPlans: 105,
+    price: 299.00,
+    photo: destionationsCard4,
+  },
+  {
+    id: 5,
+    country: "Costa Rica",
+    title: "International Costa Rica",
+    tripPlans: 23,
+    price: 250.00,
+    photo: destionationsCard5,
+  },
+  {
+    id: 6,
+    country: "Argentina",
+    title: "International Argentina",
+    tripPlans: 87,
+    price: 400.00,
+    photo: destionationsCard6,
+  },
+]
+
+export const blogArticles = [
+  {
+    id: 1,
+    title: "Food & Drink",
+    info: "Founded by Pope Julius II in the early 16th century and enlarged by successive pontiffs, the Vatican Museums boast one of the world's greatest art…",
+    photo: articlePhoto1,
+  },
+  {
+    id: 2,
+    title: "See & Do",
+    info: "Everyone wants to see the Colosseum, and it doesn’t disappoint, especially if accompanied by tales of armored gladiators and hungry lions. More...",
+    photo: articlePhoto2,
+  },
+  {
+    id: 3,
+    title: "Inspiration",
+    info: "Founded by Pope Julius II in the early 16th century and enlarged by successive pontiffs, the Vatican Museums boast one of the world's greatest art…",
+    photo: articlePhoto3,
+  },
+  {
+    id: 4,
+    title: "Travel Tips",
+    info: "Everyone wants to see the Colosseum, and it doesn’t disappoint, especially if accompanied by tales of armored gladiators and hungry lions. More...",
+    photo: articlePhoto4,
+  },
+  {
+    id: 5,
+    title: "Food & Drink",
+    info: "In the city of outstanding churches, none can hold a candle to St Peter's, Italy’s largest, richest and most spectacular basilica. Built atop a 4th…",
+    photo: articlePhoto5,
+  },
+]
