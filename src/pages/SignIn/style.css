@@ -1,4 +1,4 @@
-/* .logosContainer {
+.logosContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +90,7 @@ main p {
 main form img {
     position: relative;
     bottom: 35px;
-    left: 450px;
+    left: 520px;
 }
 
 p:nth-of-type(1) {
@@ -204,4 +204,4 @@ p.createAccountFooter a {
     }
   }
   
- */
+
