@@ -1,4 +1,4 @@
-.logosContainer {
+/* .logosContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,24 +20,27 @@ aside {
     background-size: cover;
     background-position: center;
     width: 47%;
+    height: 100vh;
 }
 
 main {
     width: 45%;
     padding: 30px 70px 80px 70px;
     margin: 0 auto;
+    height: 90vh;
 }
 
 main .appLogoContainer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 60px;
 }
 
 .container {
     display: flex;
-    height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
 main h1 {
@@ -87,7 +90,7 @@ main p {
 main form img {
     position: relative;
     bottom: 35px;
-    left: 510px;
+    left: 450px;
 }
 
 p:nth-of-type(1) {
@@ -134,7 +137,7 @@ p.enteringEmail {
 
 div.top {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 160px;
     align-items: center;
     margin-bottom: 80px;
@@ -161,13 +164,44 @@ p.createAccountFooter a {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 680px) {
-    aside {
-        display: none;
-    }
-    main {
-        width: 100%;
-        padding: 0;
-    }
+.bottom {
+    display: flex;
+    flex-direction: column;
 }
 
+@media only screen and (max-width: 480px) {
+    body {
+      max-width: 100vw;
+    }
+    .signinContainer {
+      height: 100vh;
+      overflow-x: hidden;
+    }
+    main h1{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    main {
+      width: 100%;
+      padding: 0 30px;
+    }
+    aside {
+      display: none;
+    }
+    main .appLogoContainer {
+      padding: 20px;
+      height: 80px;
+      margin-bottom: 0;
+    }
+    main .logosContainer {
+      flex-direction: column;
+      height: 180px;
+    }
+    main form img {
+      position: relative;
+      left: 310px;
+      bottom: 35px;
+    }
+  }
+  
+ */

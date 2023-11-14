@@ -10,22 +10,22 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <NavLink to="/about" activeClassName="active">
+              <NavLink to="/about" activeclassname="active">
                 About us
               </NavLink>
             </li>
             <li>
-              <NavLink to="/faq" activeClassName="active">
+              <NavLink to="/faq" activeclassname="active">
                 FAQ
               </NavLink>
             </li>
             <li>
-              <NavLink to="/blog" activeClassName="active">
+              <NavLink to="/blog" activeclassname="active">
                 Blog
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" activeClassName="active">
+              <NavLink to="/contact" activeclassname="active">
                 Contact us
               </NavLink>
             </li>
@@ -38,7 +38,7 @@ const Header = () => {
       </section>
       <section className="bottomHeader">
         <div className="leftButtons">
-          <NavLink to="/destinations" activeClassName="active">
+          <NavLink to="/destinations" activeclassname="active">
             Destinations
           </NavLink>
           <Link to="#">Private trips</Link>
