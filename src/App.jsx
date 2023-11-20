@@ -10,11 +10,13 @@ import About from "./pages/About/About.jsx";
 import Blog from "./pages/Blog/Blog.jsx";
 import Italy from "./pages/Italy/Italy.jsx";
 import Display from "./Display.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="" element={<Display />}>
             <Route path="/" element={<Home />} />
