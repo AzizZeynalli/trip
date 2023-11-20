@@ -1,5 +1,4 @@
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
+
 import Hero from "../../components/Hero/Hero";
 import aboutBackground from "../../assets/about/aboutBackground.png";
 import SecondHero from "./components/SecondHero";
@@ -13,14 +12,12 @@ const About = () => {
     const comment = "Discover Our Passion for Travel and Adventure.";
     return (
         <div>
-            <Header />
             <Hero heading={heading} comment={comment} background={aboutBackground}/>
             <SecondHero />
             <Why />
             <LocalExperts />
             <LinkToDestinations />
             <Email />
-            <Footer />
         </div>
     );
 }

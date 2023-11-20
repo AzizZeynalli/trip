@@ -29,14 +29,16 @@ const SignIn = () => {
           <div>
             {" "}
             <label htmlFor="">Password</label>
-            <input type={displayPassword ? "text" : "password"} />
-            <img
-              src={eye}
-              alt=""
-              width={"20"}
-              onClick={() => setDisplayPassword(!displayPassword)}
-              style={{ cursor: "pointer" }}
-            />
+            <div className="passwordContainer">
+              <input type={displayPassword ? "text" : "password"} />
+              <img
+                src={eye}
+                alt=""
+                width={"20"}
+                onClick={() => setDisplayPassword(!displayPassword)}
+                style={{ cursor: "pointer" }}
+              />
+            </div>
           </div>
         </form>
         <p>
@@ -45,26 +47,28 @@ const SignIn = () => {
         <button className="signinButton" onClick={() => navigate("/")}>
           Sign in
         </button>
+        <section className="footer">
+        <div className="social-medias">
+          <p>or use one of this</p>
+          <div className="logosContainer">
+            <button className="signInLogo">
+              <img src={GoogleLogo} alt="google" />
+            </button>
+            <button className="signInLogo">
+              <img src={AppleLogo} alt="apple" />
+            </button>
+            <button className="signInLogo">
+              <img src={FacebookLogo} alt="facebook" />
+            </button>
+          </div>
+        </div>
 
-            <p>or use one of this</p>
-            <div className="logosContainer">
-              <button className="signInLogo">
-                <img src={GoogleLogo} alt="google" />
-              </button>
-              <button className="signInLogo">
-                <img src={AppleLogo} alt="apple" />
-              </button>
-              <button className="signInLogo">
-                <img src={FacebookLogo} alt="facebook" />
-              </button>
-              </div>
-
-          <p>
-            <Link to="/createaccount">
-              Don't have an account? <span>Create new for adventure!</span>
-            </Link>
-          </p>
-   
+        <p className="create-account">
+          <Link to="/createaccount">
+            Don't have an account? <span>Create new for adventure!</span>
+          </Link>
+        </p>
+        </section>
       </main>
     </div>
   );

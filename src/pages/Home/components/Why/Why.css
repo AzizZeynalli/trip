@@ -43,3 +43,16 @@
   text-align: center;
   margin-bottom: 44px;
 }
+
+@media screen and (max-width: 480px) {
+  .why-section {
+    padding: 500px 32px;
+  }
+  .why-section .container{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .why-card {
+    width: 100%;
+  }
+}

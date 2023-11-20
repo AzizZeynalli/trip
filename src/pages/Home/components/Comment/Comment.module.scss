@@ -78,3 +78,18 @@
         
     }
 }
+
+@media screen and (max-width: 480px) {
+    .commentSection {
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        padding-top: 100px;
+        .container {
+            width: 80%;
+
+        }
+    }
+}
