@@ -12,6 +12,7 @@ import Italy from "./pages/Italy/Italy.jsx";
 import Display from "./Display.jsx";
 import ScrollToTop from "./ScrollToTop.jsx";
 
+
 const App = () => {
   return (
     <>
@@ -24,13 +25,12 @@ const App = () => {
             <Route path="/faq" element={<Faq />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/destinations" element={<Destinations />} />
+            <Route path="/destinations/italy" element={<Italy />} />
           </Route>
           <Route path="/signin" element={<SignIn />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
           <Route path="/createaccount" element={<CreateAccount />} />
-          <Route path="/destinations" element={<Destinations />} />
-          <Route path="/destinations/italy" element={<Italy />} />
-
           <Route
             path="*"
             element={

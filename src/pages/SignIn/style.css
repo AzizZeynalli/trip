@@ -19,12 +19,13 @@ aside {
   background-size: cover;
   background-position: center;
   width: 47%;
-  height: 100vh;
+  min-height: 100%;
+  height: auto;
 }
 
 main {
   width: 45%;
-  padding: 30px 70px 100px 70px;
+  padding: 30px 70px 10px 70px;
   margin: 0 auto;
 }
 
@@ -32,17 +33,17 @@ main .appLogoContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
 }
 
-.container {
+.signInContainer{
   display: flex;
   max-width: 100vw;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 main h1 {
   font-size: 24px;
+  margin-top: 60px;
   margin-bottom: 30px;
 }
 
@@ -94,14 +95,14 @@ main p {
   margin-bottom: 15px;
 }
 
-.container .footer {
+.signInContainer .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 70px;
 }
 
-.container .footer .create-account {
+.signInContainer .footer .create-account {
   padding: 0;
 }
 
@@ -118,8 +119,8 @@ p:nth-of-type(1) {
 
 .footer p:nth-of-type(1),
 p.signUpWith {
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 25px;
   color: #97a5b2;
 }
 
@@ -178,7 +179,7 @@ p.createAccountFooter {
   color: #141d24;
   font-weight: 400;
   width: 60%;
-  margin: 0 auto;
+  margin: 50px auto;
   line-height: 24px;
   font-size: 14px;
 }
@@ -211,13 +212,13 @@ p.createAccountFooter a {
     flex-direction: column;
     height: 180px;
   }
-  .container .footer {
+  .signInContainer .footer {
     gap: 10px;
   }
-  .container .footer .social-medias {
+  .signInContainer .footer .social-medias {
     order: 1;
   }
-  .container .footer .create-account {
+  .signInContainer .footer .create-account {
     order: 0;
     width: 70%;
     text-align: left;

@@ -2,7 +2,7 @@
     background-color: #F5F7FA;
     display: grid;
     grid-template-columns: 3fr 4fr;
-    padding: 70px 150px 70px 200px;
+    padding: 72px 182px;
     .footer-left {
         display: grid;
         grid-template-rows: 1fr 2fr 1fr;
@@ -13,7 +13,7 @@
             text-align: left;
             margin: 0;
         }
-        p:nth-of-type(2) {
+        .copyrightLargeScreen {
             font-size: 12px;
             text-align: left;
             margin: 0;
@@ -23,6 +23,9 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         width: 100%;
+        .copyrightSmallScreen {
+            display: none;
+        }
     }
     ul {
         list-style-type: none;
@@ -42,5 +45,29 @@
     p {
         color: #3A4D5A;
         font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 64px 30px 32px 30px;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        .footer-left {
+            grid-template-rows: 1fr 1fr;
+            .copyrightLargeScreen {
+                display: none;
+            }
+        }
+        .footer-right {
+            grid-template-columns: 1fr;
+            gap: 24px;
+            .copyrightSmallScreen {
+                display: block;
+                font-size: 12px;
+                text-align: left;
+                margin: 0;
+            }
+        }
     }
 }

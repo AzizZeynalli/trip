@@ -23,3 +23,10 @@
         align-items: center;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .linkToDestSection {
+        flex-direction: column;
+        padding: 32px 0;
+    }
+}

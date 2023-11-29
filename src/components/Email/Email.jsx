@@ -9,8 +9,10 @@ const Email = () => {
         how we strive to make the world a better place, and all sorts of
         surprises.
       </p>
-      <input type="email" placeholder="Email" />
-      <button>Sign up</button>
+      <div className={styles.inputContainer}>
+        <input type="email" placeholder="Email" />
+        <button>Sign up</button>
+      </div>
     </section>
   );
 };

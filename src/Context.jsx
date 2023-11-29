@@ -6,7 +6,6 @@ export const AppProvider = ({ children }) => {
   const [menuOpened, setMenuOpened] = useState();
 
   const toggleMenu = () => {
-    console.log("togglemenu called");
     setMenuOpened(!menuOpened);
   };
 

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ForgotPassword = () => {
   return (
-    <div className="container">
+    <div className="signInContainer">
       <aside></aside>
       <main>
         <div className="top">

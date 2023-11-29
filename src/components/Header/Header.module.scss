@@ -1,7 +1,4 @@
-
-
 .header {
-
   .topHeader {
     background-color: #f5f7fa;
     padding: 10px 70px;
@@ -9,16 +6,13 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-
     nav {
-      width: 30%;
-
+      width: 28%;
       ul {
         display: flex;
         align-items: center;
         list-style-type: none;
         gap: 34px;
-
 
         li {
           button {
@@ -73,21 +67,23 @@
         height: 45px;
         padding: 12px 24px;
         font-size: 16px;
+      }
 
         a {
           color: #4a21ef;
         }
 
-        &:nth-of-type(1) {
+        .firstButton {
           background-color: #4a21ef;
           color: #ffffff;
           border: none;
         }
 
-        &:nth-of-type(2) {
+        .secondButton {
           background-color: #ffffff;
           color: #4a21ef;
           border: 1px solid #4a21ef;
+          
         }
       }
     }
@@ -101,15 +97,18 @@
       }
     }
   }
-}
+
 
 @media screen and (max-width: 480px) {
   .header {
     border: 1px solid #f5f7fa;
+    padding: 10px 24px;
+    width: 100vw;
     .topHeader {
       display: none;
     }
     .bottomHeader {
+      width: 100%;
       padding: 20px 15px;
       display: grid;
       align-items: start;

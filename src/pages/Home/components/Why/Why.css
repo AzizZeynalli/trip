@@ -1,6 +1,5 @@
 .why-section {
-  height: 450px;
-  padding: 80px 76px;
+  padding: 0 72px 120px 72px;
 }
 
 .why-section .container {
@@ -46,7 +45,7 @@
 
 @media screen and (max-width: 480px) {
   .why-section {
-    padding: 500px 32px;
+    padding: 32px 30px;
   }
   .why-section .container{
     flex-direction: column;

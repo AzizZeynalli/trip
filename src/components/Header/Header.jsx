@@ -1,6 +1,3 @@
-// Header.js
-
-import { useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Header.module.scss";
 import arrows from "../../assets/arrows.svg";
@@ -9,29 +6,13 @@ import burger from "../../assets/burger.svg";
 import cancel from "../../assets/cancel.svg";
 import avatar from "../../assets/avatar.svg";
 import { useAppContext } from "../../Context.jsx";
-import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const { menuOpened, toggleMenu } = useAppContext();
 
-  const location = useLocation();
-
   const linkStyle = ({ isActive }) => ({
     color: isActive ? "#4A21EF" : "",
   });
-
-  useEffect(() => {
-    console.log('menuOpened', menuOpened);
-  }, [menuOpened]);
-  
-
-  useEffect(() => {
-    if (!menuOpened && location.pathname !== "/") {
-      // Close the menu when the route changes (except on the home page and about page)
-      toggleMenu();
-    }
-  }, [menuOpened, location.pathname, toggleMenu]);
-
 
   return (
     <header className={styles.header}>
@@ -39,9 +20,9 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/about">
+              <NavLink to="/about" style={linkStyle}>
                 About us
-              </Link>
+              </NavLink>
             </li>
             <li>
               <NavLink to="/faq" style={linkStyle}>
@@ -86,10 +67,10 @@ const Header = () => {
           <img src={logo} alt="logo" />
         </Link>
         <div className={styles.rightButtons}>
-          <button>I'm Feeling Lucky</button>
-          <button>
-            <Link to="/signin">Login</Link>
-          </button>
+          <button className={styles.firstButton}>I'm Feeling Lucky</button>
+          <Link to="/signin">
+            <button className={styles.secondButton}>Login</button>
+          </Link>
         </div>
         <div className={styles.avatar}>
           <img src={avatar} alt="Avatar" />

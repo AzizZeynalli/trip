@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { trendingItems } from '../../../../constants/index.js'
 import { useEffect } from 'react';
 import '../Cards.css';
-import Card from '../Card.jsx'
+import Card from '../Card.jsx';
 
 const Trending = () => {
     const [items, setItems] = useState([])
@@ -16,14 +16,13 @@ const Trending = () => {
         <section className="trending-section">
             <h1>Trending now</h1>
             <div className='trendingItemsContainer'>
-                {
-                    items.map((item) => 
-                        <Card key={item.id} item={item} />
-                    )
-                }
+                {items.map((item) => (
+                    <Card key={item.id} item={item} />
+                ))}
             </div>
         </section>
     );
+    
 }
 
 export default Trending;

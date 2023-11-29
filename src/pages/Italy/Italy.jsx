@@ -1,5 +1,3 @@
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
 import Hero from "./components/Hero";
 import MustSee from "./components/MustSee";
 import Guide from "./components/Guide";
@@ -12,7 +10,6 @@ import Map from "./components/Map";
 const Italy = () => {
     return (
         <div>
-            <Header />
             <Hero />
             <AvailableTrips />
             <Map />
@@ -21,7 +18,6 @@ const Italy = () => {
             <Guide />
             <LinkToDestinations />
             <Email />
-            <Footer />
         </div>
     );
 }

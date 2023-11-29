@@ -11,7 +11,7 @@ const Footer = () => {
           Discover the world's wonders and let us be <br />
           your trusted guide to extraordinary destinations.
         </p>
-        <p>© Copyright 2023 Tourista Ltd. All Rights Reserved.</p>
+        <p className={styles.copyrightLargeScreen}>© Copyright 2023 Tourista Ltd. All Rights Reserved.</p>
       </section>
       <section className={styles["footer-right"]}>
         {Object.keys(footerLinks).map((title) => {
@@ -26,6 +26,7 @@ const Footer = () => {
             </div>
           );
         })}
+        <p className={styles.copyrightSmallScreen}>© Copyright 2023 Tourista Ltd. All Rights Reserved.</p>
       </section>
     </footer>
   );

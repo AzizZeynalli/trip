@@ -11,7 +11,7 @@ const Comment = () => {
             showed us some hidden hiking trails and amazing local food spots. He
             even met us for a coffee to make sure we had everything we needed.
           </p>
-          <h5>Thanks Tiago!”</h5>
+          <h5>Thanks Tiago!</h5>
           <p>Charlie, rappelling down a 370-foot waterfall</p>
           <p>The Azores</p>
         </div>

@@ -13,7 +13,7 @@ const Asia = () => {
     }, [])
 
     return (
-        <section className={styles.cardSection}>
+        <section className={styles.asiaSection}>
             <h1>Asia</h1>
             <div className={styles.cardsContainer}>
                 {
